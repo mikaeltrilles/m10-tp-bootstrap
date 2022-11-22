@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/style/style.css">
+  <title>TP05-Mentions</title>
+</head>
+
+<body>
+  <!--* NavBar Start -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="/index.html">
+        <img src="https://bitcoin.org/img/icons/logotop.svg?1666775325" alt="Bitcoin">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active actlink" href="/comment.html">Comment ?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cours.html">Combien ?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--* NavBar  End  -->
+  <!--~ TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+      async>
+        {
+          "symbols": [
+            {
+              "proName": "FOREXCOM:SPXUSD",
+              "title": "S&P 500"
+            },
+            {
+              "proName": "FOREXCOM:NSXUSD",
+              "title": "US 100"
+            },
+            {
+              "proName": "FX_IDC:EURUSD",
+              "title": "EUR/USD"
+            },
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "Bitcoin"
+            },
+            {
+              "proName": "BITSTAMP:ETHUSD",
+              "title": "Ethereum"
+            },
+            {
+              "description": "EGLD",
+              "proName": "BINANCE:EGLDBUSD"
+            }
+          ],
+            "showSymbolLogo": true,
+              "colorTheme": "light",
+                "isTransparent": false,
+                  "displayMode": "adaptive",
+                    "locale": "fr"
+        }
+      </script>
+  </div>
+  <!--~ TradingView Widget END -->
+  <!--* Content Start -->
+  <div class="container-fluid bg-dark text-center p-4">
+    <h1 class="text-white">Comment fonctionne Bitcoin ?</h1>
+    <p class="text-secondary">C'est une question souvent sujette à confusion. Voici une explication rapide !</p>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 align-item-center">
+        <img src="https://bitcoin.org/img/icons/new-user.svg?1669126125" alt="dessin">
+      </div>
+      <div class="col-md-6">
+        <h2 class="orange h2com">Les bases pour un nouvel utilisateur</h2>
+        <p class="fs-5">Comme nouvel utilisateur, vous pouvez débuter avec Bitcoin sans comprendre les détails
+          techniques. Une fois que vous avez installé un portefeuille Bitcoin sur votre ordinateur ou votre téléphone
+          portable, il générera votre première adresse Bitcoin et vous pourrez en créer de nouvelles chaque fois que
+          vous en avez besoin. Vous pouvez divulguer vos adresses à vos amis pour qu'ils puissent vous payer et vice
+          versa. En fait, utiliser Bitcoin est assez comparable à échanger des courriels, à l'exception que les adresses
+          Bitcoin ne devraient être utilisées qu'une seule fois.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="orange h2com">Soldes - chaine de blocs</h2>
+        <p class="fs-5">La chaine de blocs est un <strong>grand livre comptable partagé et public</strong> sur lequel
+          repose le réseau Bitcoin en entier. Toutes les transactions confirmées sont incluses dans la chaine de blocs.
+          De cette façon, les portefeuilles Bitcoin peuvent calculer leurs soldes et il est possible de vérifier que les
+          nouvelles transactions dépensent des bitcoins appartenant effectivement à l'émetteur du paiement. L'intégrité
+          et l'ordre chronologique de la chaine de blocs sont assurés par des moyens cryptographiques.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://bitcoin.org/img/icons/blockchain.svg?1669126125" alt="dessin">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://bitcoin.org/img/icons/private-keys.svg?1669126125" alt="dessin">
+      </div>
+      <div class="col-md-6">
+        <h2 class="orange h2com">Transactions - clés privées</h2>
+        <p class="fs-5">Une transaction est <strong>un transfert de valeur entre portefeuilles Bitcoin</strong> qui est
+          incluse dans la chaine de blocs. Les portefeuilles Bitcoin conservent une information secrète appelée clé
+          privée ou graine qui est utilisée pour signer les transactions, fournissant une preuve mathématique qu'elles
+          proviennent du propriétaire de chaque portefeuille. La signature empêche également toute modification de la
+          transaction après son émission. Toutes les transactions sont diffusées entre les utilisateurs et commencent
+          habituellement à être confirmées par le réseau dans les 10 minutes suivantes par un procédé nommé minage.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="orange h2com">Traitement - minage</h2>
+        <p class="fs-5">Le minage est un <strong>système de consensus distribué</strong> qui est utilisé pour confirmer
+          les transactions en attente en les incluant dans la chaine de blocs. Il impose un ordre chronologique dans la
+          chaine de blocs, protège la neutralité du réseau et permet à différents ordinateurs d'être en accord sur
+          l'état du système. Pour être confirmées, les transactions doivent être incluses dans un bloc qui doit
+          correspondre à des règles cryptographiques très strictes qui seront vérifiées par le réseau. Ces règles
+          empêchent la modification d'un bloc antérieur car cela invaliderait tous les blocs suivants. Le minage induit
+          également l'équivalent d'une loterie compétitive qui empêche à tout individu d'ajouter facilement des blocs
+          consécutivement dans la chaine de blocs. De cette façon, aucun individu ne peut contrôler ce qui est inclus
+          dans la chaine de blocs ni en remplacer des parties pour annuler ses propres dépenses.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://bitcoin.org/img/icons/mining.svg?1669126125" alt="dessin">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://bitcoin.org/img/icons/paper.svg?1669126125" alt="dessin">
+      </div>
+      <div class="col-md-6">
+        <h2 class="orange h2com">Aller plus loin dans l'aventure</h2>
+        <p class="fs-5">Ceci est un cours résumé du système. Si vous voulez rentrer dans les détails, vous pouvez lire
+          le document original (en anglais) qui décrit le fonctionnement du système, lire la documentation pour les
+          développeurs (en anglais également), et explorer le wiki Bitcoin.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--* Content End -->
+
+  <!--* Footer Start -->
+  <footer class="container-fluid text-center p-3">
+    Made with ♥️ by mtdevweb<sup>TM</sup>
+  </footer>
+  <!--* Footer End -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

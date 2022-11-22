@@ -1,0 +1,76 @@
+nav,
+footer,
+.grey{
+  background-color: darkgrey;
+}
+
+.logo img {
+  width: 132px;
+  height: 29px;
+  vertical-align: middle;
+}
+
+#btcaccess {
+  position: relative;
+}
+
+.btcaccess {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #F7931A;
+  padding: 0 10% 0 0;
+  object-fit: cover;
+  text-shadow: #fff 0 0 1px;
+
+}
+
+#btcfraude {
+  position: relative;
+}
+
+.btcfraude {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #F7931A;
+  padding: 0 10% 0 0;
+  object-fit: cover;
+  text-shadow: #fff 0 0 1px;
+}
+
+#btcloupe {
+  position: relative;
+}
+
+.btcloupe {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #F7931A;
+  padding: 0 10% 0 0;
+  object-fit: cover;
+  text-shadow: #fff 0 0 1px;
+}
+
+.btc {
+  height: auto;
+  width: auto;
+  max-height: 774px;
+  object-fit: fill;
+}
+
+.actlink {
+  background-color: #F7931A;
+  color: rgb(255, 255, 255) !important;
+  font-weight: 400;
+  border-radius: 25px 25px 0 0;
+}
+
+.orange {
+  color: #F7931A;
+}
+
+.h2com{
+  margin-bottom: 2rem !important;
+}
